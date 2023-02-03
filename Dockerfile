@@ -1,6 +1,6 @@
 FROM ubuntu:22.04
 ENV DEBIAN_FRONTEND=noninteractive
-RUN apt-get update -y && apt-get install apache2 -y
+RUN apt-get update -y && apt-get install apache2 -y && apt-get install unzip
 
 ADD https://github.com/startbootstrap/startbootstrap-sb-admin/archive/gh-pages.zip /var/www/html/
 WORKDIR /var/www/html/
